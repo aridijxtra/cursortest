@@ -212,11 +212,9 @@
           <button type="button" class="choice-btn" data-coding="1">
             Ik wil meer
             <span class="chevron" aria-hidden="true">→</span>
+            
             <button type="button" class="choice-btn" data-coding="2">
-            Ik wil meer
-            <span class="chevron" aria-hidden="true">→</span>
-          <button type="button" class="choice-btn" data-coding="3">
-            Ik wil hetzelfde
+            Ik wil minder
             <span class="chevron" aria-hidden="true">→</span>
           </button>
         </div>
@@ -244,10 +242,8 @@
         panel.classList.add("swap-out");
         window.setTimeout(function () {
           if (coding === 1) {
-            resultWord.textContent = "LEEUW";
-          if (coding === 2) {
-            resultWord.textContent = "ZAFANT";            
-          } else if (coding === 3) {
+            resultWord.textContent = "LEEUW";     
+          } else if (coding === 2) {
             resultWord.textContent = "MUIS";
           }
           viewWelcome.hidden = true;
